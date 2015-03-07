@@ -3,10 +3,10 @@
 //  PresentationTest
 //
 //  Created by Andreas Verhoeven on 06-03-15.
-//  Copyright (c) 2015 Bunq. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "PopupViewController.h"
 
 @interface ViewController ()
 
@@ -14,14 +14,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"Present me" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(presentIt:) forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
+    button.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
+    button.center = self.view.center;
+    [self.view addSubview:button];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)presentIt:(id)sender
+{
+    PopupViewController* vc = [PopupViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

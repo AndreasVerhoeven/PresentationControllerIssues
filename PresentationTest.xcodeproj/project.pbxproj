@@ -10,10 +10,10 @@
 		496A0D061AAA5A1800DAEC42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D051AAA5A1800DAEC42 /* main.m */; };
 		496A0D091AAA5A1800DAEC42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D081AAA5A1800DAEC42 /* AppDelegate.m */; };
 		496A0D0C1AAA5A1800DAEC42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D0B1AAA5A1800DAEC42 /* ViewController.m */; };
-		496A0D0F1AAA5A1800DAEC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496A0D0D1AAA5A1800DAEC42 /* Main.storyboard */; };
-		496A0D111AAA5A1800DAEC42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496A0D101AAA5A1800DAEC42 /* Images.xcassets */; };
-		496A0D141AAA5A1800DAEC42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496A0D121AAA5A1800DAEC42 /* LaunchScreen.xib */; };
 		496A0D201AAA5A1900DAEC42 /* PresentationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D1F1AAA5A1900DAEC42 /* PresentationTestTests.m */; };
+		496A0D2B1AAA5A5100DAEC42 /* PresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D2A1AAA5A5100DAEC42 /* PresentationController.m */; };
+		496A0D2E1AAA5A8200DAEC42 /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496A0D2D1AAA5A8200DAEC42 /* PopupViewController.m */; };
+		496A0D301AAB271400DAEC42 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496A0D2F1AAB271400DAEC42 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,14 @@
 		496A0D081AAA5A1800DAEC42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		496A0D0A1AAA5A1800DAEC42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		496A0D0B1AAA5A1800DAEC42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		496A0D0E1AAA5A1800DAEC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		496A0D101AAA5A1800DAEC42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		496A0D131AAA5A1800DAEC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		496A0D191AAA5A1900DAEC42 /* PresentationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496A0D1E1AAA5A1900DAEC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496A0D1F1AAA5A1900DAEC42 /* PresentationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationTestTests.m; sourceTree = "<group>"; };
+		496A0D291AAA5A5100DAEC42 /* PresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationController.h; sourceTree = "<group>"; };
+		496A0D2A1AAA5A5100DAEC42 /* PresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationController.m; sourceTree = "<group>"; };
+		496A0D2C1AAA5A8200DAEC42 /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		496A0D2D1AAA5A8200DAEC42 /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
+		496A0D2F1AAB271400DAEC42 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +87,12 @@
 				496A0D081AAA5A1800DAEC42 /* AppDelegate.m */,
 				496A0D0A1AAA5A1800DAEC42 /* ViewController.h */,
 				496A0D0B1AAA5A1800DAEC42 /* ViewController.m */,
-				496A0D0D1AAA5A1800DAEC42 /* Main.storyboard */,
-				496A0D101AAA5A1800DAEC42 /* Images.xcassets */,
-				496A0D121AAA5A1800DAEC42 /* LaunchScreen.xib */,
 				496A0D031AAA5A1800DAEC42 /* Supporting Files */,
+				496A0D291AAA5A5100DAEC42 /* PresentationController.h */,
+				496A0D2A1AAA5A5100DAEC42 /* PresentationController.m */,
+				496A0D2C1AAA5A8200DAEC42 /* PopupViewController.h */,
+				496A0D2D1AAA5A8200DAEC42 /* PopupViewController.m */,
+				496A0D2F1AAB271400DAEC42 /* Launch Screen.xib */,
 			);
 			path = PresentationTest;
 			sourceTree = "<group>";
@@ -164,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Bunq;
+				ORGANIZATIONNAME = AveApps;
 				TargetAttributes = {
 					496A0CFF1AAA5A1800DAEC42 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,9 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496A0D0F1AAA5A1800DAEC42 /* Main.storyboard in Resources */,
-				496A0D141AAA5A1800DAEC42 /* LaunchScreen.xib in Resources */,
-				496A0D111AAA5A1800DAEC42 /* Images.xcassets in Resources */,
+				496A0D301AAB271400DAEC42 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +223,9 @@
 			files = (
 				496A0D0C1AAA5A1800DAEC42 /* ViewController.m in Sources */,
 				496A0D091AAA5A1800DAEC42 /* AppDelegate.m in Sources */,
+				496A0D2B1AAA5A5100DAEC42 /* PresentationController.m in Sources */,
 				496A0D061AAA5A1800DAEC42 /* main.m in Sources */,
+				496A0D2E1AAA5A8200DAEC42 /* PopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +246,6 @@
 			targetProxy = 496A0D1A1AAA5A1900DAEC42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		496A0D0D1AAA5A1800DAEC42 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				496A0D0E1AAA5A1800DAEC42 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		496A0D121AAA5A1800DAEC42 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				496A0D131AAA5A1800DAEC42 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		496A0D211AAA5A1900DAEC42 /* Debug */ = {
@@ -414,6 +399,7 @@
 				496A0D251AAA5A1900DAEC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496A0D261AAA5A1900DAEC42 /* Build configuration list for PBXNativeTarget "PresentationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +408,7 @@
 				496A0D281AAA5A1900DAEC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
