@@ -43,8 +43,6 @@
     button.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
     button.center = self.view.center;
     [self.view addSubview:button];
-    
-    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(presentIt:)]];
 }
 
 -(void)presentIt:(id)sender

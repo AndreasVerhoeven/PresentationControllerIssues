@@ -7,8 +7,8 @@
 
 #import "PresentationController.h"
 
-#define USE_DIMMING_VIEW    // disabling this will make 
-#define USE_WRAPPER_PRESENTED_VIEW
+#define USE_DIMMING_VIEW // disabling this will make the presentation not be animated
+#define USE_WRAPPER_PRESENTED_VIEW // disabling this will cause the 'fullscreen dismissal' issue, enabling this will make black borders show up during rotation
 
 @implementation PresentationController
 {
@@ -51,12 +51,15 @@
 
 -(void)presentationTransitionWillBegin
 {
-    [self.containerView addSubview:_dimmingView];
-    
-    _dimmingView.alpha = 0;
-    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>context){
-        _dimmingView.alpha = 1;
-    } completion:nil];
+    if(_dimmingView != nil)
+    {
+        [self.containerView addSubview:_dimmingView];
+        
+        _dimmingView.alpha = 0;
+        [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>context){
+            _dimmingView.alpha = 1;
+        } completion:nil];
+    }
 }
 
 -(void)presentationTransitionDidEnd:(BOOL)completed
@@ -69,9 +72,12 @@
 
 - (void)dismissalTransitionWillBegin
 {
-    [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>context){
-        _dimmingView.alpha = 0;
-    } completion:nil];
+    if(_dimmingView != nil)
+    {
+        [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>context){
+            _dimmingView.alpha = 0;
+        } completion:nil];
+    }
 }
 
 -(CGRect)frameOfPresentedViewInContainerView
